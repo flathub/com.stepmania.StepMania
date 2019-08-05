@@ -18,7 +18,7 @@
         "--persist=.stepmania-5.1"
     ],
     "modules" : [
-        "libmad/libmad.json",
+        "shared-modules/libmad/libmad.json",
         "shared-modules/glu/glu-9.0.0.json",
         "shared-modules/glew/glew.json",
         "shared-modules/udev/udev-175.json",
