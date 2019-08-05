@@ -31,11 +31,11 @@
             "post-install": [
                 "mkdir -p /app/bin/",
                 "ln -s /app/stepmania-5.1/stepmania /app/bin/stepmania",
-                "install -m644 -p -D icons/hicolor/256x256/apps/stepmania-ssc.png /app/share/icons/hicolor/256x256/apps/com.stepmania.StepMania.png",
-                "install -m644 -p -D icons/hicolor/scalable/apps/stepmania-ssc.svg /app/share/icons/hicolor/scalable/apps/com.stepmania.StepMania.svg",
-                "install -m644 -p -D stepmania.desktop /app/share/applications/com.stepmania.StepMania.desktop",
-                "install -m644 -p -D com.stepmania.StepMania.appdata.xml /app/share/appdata/com.stepmania.StepMania.appdata.xml",
-                "desktop-file-edit --set-icon=com.stepmania.StepMania /app/share/applications/com.stepmania.StepMania.desktop"
+                "install -m644 -p -D icons/hicolor/256x256/apps/stepmania-ssc.png /app/share/icons/hicolor/256x256/apps/${FLATPAK_ID}.png",
+                "install -m644 -p -D icons/hicolor/scalable/apps/stepmania-ssc.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
+                "install -m644 -p -D stepmania.desktop /app/share/applications/${FLATPAK_ID}.desktop",
+                "install -m644 -p -D com.stepmania.StepMania.appdata.xml /app/share/appdata/${FLATPAK_ID}.appdata.xml",
+                "desktop-file-edit --set-icon=${FLATPAK_ID} /app/share/applications/${FLATPAK_ID}.desktop"
             ],
             "sources" : [
                 {
