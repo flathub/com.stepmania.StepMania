@@ -11,7 +11,7 @@
         "--socket=pulseaudio",
         "--socket=wayland",
         "--socket=x11",
-        "----metadata=X-DConf=migrate-path=/com/stepmania/StepMania",
+        "--metadata=X-DConf=migrate-path=/com/stepmania/StepMania",
         "--persist=.stepmania-5.1"
     ],
     "modules" : [
