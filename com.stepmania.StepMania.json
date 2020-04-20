@@ -22,7 +22,8 @@
             "name" : "stepmania",
             "buildsystem" : "cmake-ninja",
             "config-opts" : [
-                "-DWITH_FFMPEG:BOOL=OFF"
+                "-DWITH_FFMPEG:BOOL=OFF",
+                "-DWITH_FULL_RELEASE=ON"
             ],
             "post-install": [
                 "mkdir -p /app/bin/",
