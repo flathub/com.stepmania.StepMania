@@ -19,10 +19,21 @@
         "shared-modules/glu/glu-9.json",
         "shared-modules/glew/glew.json",
         {
+            "name": "ffmpeg-2.1.3",
+            "sources" : [
+                {
+                    "type" : "archive",
+                    "url" : "https://github.com/FFmpeg/FFmpeg/archive/n2.1.3.tar.gz",
+                    "sha256" : "cfafef9c9fb2581ac234fc11da97c677e5a911db4e16b341ab724b7e6aa03b62"
+                }
+            ]
+        },
+        {
             "name" : "stepmania",
-            "buildsystem" : "cmake-ninja",
+            "buildsystem" : "cmake",
             "config-opts" : [
-                "-DWITH_FFMPEG:BOOL=OFF"
+                "-DWITH_FFMPEG:BOOL=ON",
+                "-DWITH_SYSTEM_FFMPEG:BOOL=ON"
             ],
             "post-install": [
                 "mkdir -p /app/bin/",
