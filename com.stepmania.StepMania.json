@@ -35,7 +35,8 @@
                     "sources": [
                         {
                             "type": "git",
-                            "url": "https://github.com/yasm/yasm.git"
+                            "url": "https://github.com/yasm/yasm.git",
+                            "commit": "ba463d3c26c0ece2e797b8d6381b161633b5971a"
                         }
                     ]
                 }
