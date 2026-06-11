@@ -1,0 +1,12 @@
+--- stepmania/Themes/default/metrics.ini.orig	2025-01-09 12:31:34.793024559 +0100
++++ stepmania/Themes/default/metrics.ini	2025-01-09 12:31:59.576973086 +0100
+@@ -838,6 +838,9 @@
+ ShowRoulette=true
+ ShowRandom=true
+ 
++MostPlayedSongsToShow=500
++RecentSongsToShow=500
++
+ [MusicWheelItem]
+ Fallback=WheelItemBase
+ IconX=-186
