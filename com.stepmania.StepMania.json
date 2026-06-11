@@ -42,7 +42,6 @@
             "name" : "stepmania",
             "buildsystem" : "cmake-ninja",
             "config-opts" : [
-                "-DWITH_FULL_RELEASE=YES",
                 "-DWITH_PORTABLE_TOMCRYPT=NO",
                 "-DWITH_SYSTEM_FFMPEG=YES",
                 "-DWITH_SYSTEM_MAD=YES",
@@ -51,6 +50,7 @@
                 "-DWITH_SYSTEM_PNG=YES",
                 "-DWITH_SYSTEM_JSONCPP=YES",
                 "-DWITH_SYSTEM_ZLIB=YES",
+                "-DWITH_GTK3=NO",
                 "-Wno-dev",
                 "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
             ],
